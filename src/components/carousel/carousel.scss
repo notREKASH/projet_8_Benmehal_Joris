@@ -1,0 +1,49 @@
+.carousel {
+  position: relative;
+
+  & img {
+    object-fit: cover;
+    width: 335px;
+    height: 255px;
+    border-radius: 10px;
+
+    @media (min-width: 1440px) {
+      width: 1240px;
+      height: 415px;
+    }
+  }
+
+  & p {
+    border-radius: 10px;
+  }
+  #previousBtn {
+    position: absolute;
+    top: 45%;
+    left: 10px;
+    cursor: pointer;
+  }
+  #nextBtn {
+    position: absolute;
+    top: 45%;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  #nextBtn,
+  #previousBtn {
+    height: 24px;
+    width: 24px;
+    @media (min-width: 1440px) {
+      width: 46.68px;
+      height: 79.2px;
+    }
+  }
+
+  #indexOfImage {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

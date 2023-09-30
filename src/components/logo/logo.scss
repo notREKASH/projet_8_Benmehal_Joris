@@ -1,0 +1,18 @@
+.logo {
+  &[data-width="122px"][data-height="39.44px"] {
+    width: 122px;
+    height: 39.44px;
+  }
+
+  &[data-width="145px"][data-height="47px"] {
+    width: 145px;
+    height: 47px;
+
+    @media (min-width: 1440px) {
+      &[data-width="145px"][data-height="47px"] {
+        width: 210.322px;
+        height: 68px;
+      }
+    }
+  }
+}

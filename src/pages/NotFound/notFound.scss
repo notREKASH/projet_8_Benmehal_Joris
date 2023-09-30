@@ -1,0 +1,37 @@
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 113px;
+  margin: 86px 0 113px 0;
+
+  & h2 {
+    color: #ff6060;
+    font-size: 96px;
+    font-weight: 700;
+
+    @media (min-width: 1440px) {
+      font-size: 288px;
+    }
+  }
+
+  & p {
+    color: #ff6060;
+    text-align: center;
+    font-size: 18px;
+
+    @media (min-width: 1440px) {
+      font-size: 36px;
+    }
+  }
+
+  & a {
+    color: #ff6060;
+    font-size: 14px;
+    text-decoration-line: underline;
+
+    @media (min-width: 1440px) {
+      font-size: 18px;
+    }
+  }
+}

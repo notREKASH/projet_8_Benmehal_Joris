@@ -1,0 +1,53 @@
+.bg-image {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+
+  &[data-height="111px"] {
+    img {
+      height: 111px;
+      width: 100%;
+      object-fit: cover;
+      position: absolute;
+      border-radius: 10px;
+
+      @media (min-width: 1440px) {
+        height: 223px;
+      }
+    }
+  }
+
+  & div {
+    position: relative;
+    height: 111px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    @media (min-width: 1440px) {
+      height: 223px;
+      justify-content: center;
+    }
+
+    & h2 {
+      margin-left: 1em;
+      z-index: 3;
+      color: #fff;
+      font-size: 24px;
+
+      @media (min-width: 1440px) {
+        .sautDeLigne {
+          display: none;
+        }
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        font-size: 48px;
+        height: 223px;
+        justify-content: center;
+      }
+    }
+  }
+}
