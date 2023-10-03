@@ -4,7 +4,7 @@ import "./collapse.scss";
 function Collapse({ title, description }) {
   const [showContent, setShowContent] = useState(false);
 
-  function OpenContent() {
+  function openContent() {
     setShowContent((prevState) => !prevState);
   }
 
@@ -24,9 +24,9 @@ function Collapse({ title, description }) {
   return (
     <>
       <div className="collapse">
-        <button onClick={OpenContent}>{title}</button>
+        <button onClick={openContent}>{title}</button>
         <svg
-          onClick={OpenContent}
+          onClick={openContent}
           className={showContent ? "rotate open" : "rotate"}
           xmlns="http://www.w3.org/2000/svg"
           width="32"

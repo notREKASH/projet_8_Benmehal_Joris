@@ -26,9 +26,7 @@ function Carousel({ images }) {
         />
       ))}
       <div>
-        {images.length === 1 ? (
-          ""
-        ) : (
+        {images.length > 1 ? (
           <p>
             {
               <svg
@@ -87,6 +85,8 @@ function Carousel({ images }) {
               </svg>
             }
           </p>
+        ) : (
+          ""
         )}
       </div>
       <div id="indexOfImage">
