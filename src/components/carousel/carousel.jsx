@@ -7,17 +7,17 @@ function Carousel({ images }) {
 
   function handlePrevClick() {
     const newIndex = currentImageIndex - 1;
-    setCurrentImageIndex(newIndex < 0 ? images.length - 1 : newIndex);
+    setCurrentImageIndex(newIndex < 0 ? images?.length - 1 : newIndex);
   }
 
   function handleNextClick() {
     const newIndex = currentImageIndex + 1;
-    setCurrentImageIndex(newIndex % images.length);
+    setCurrentImageIndex(newIndex % images?.length);
   }
 
   return (
     <div className="carousel">
-      {images.map((image, index) => (
+      {images?.map((image, index) => (
         <img
           key={index}
           src={image}
@@ -26,7 +26,7 @@ function Carousel({ images }) {
         />
       ))}
       <div>
-        {images.length > 1 ? (
+        {images?.length > 1 ? (
           <p>
             {
               <svg
@@ -90,10 +90,10 @@ function Carousel({ images }) {
         )}
       </div>
       <div id="indexOfImage">
-        {images.length === 1 ? (
+        {images?.length === 1 ? (
           ""
         ) : (
-          <p>{`${currentImageIndex + 1}/${images.length}`}</p>
+          <p>{`${currentImageIndex + 1}/${images?.length}`}</p>
         )}
       </div>
     </div>
